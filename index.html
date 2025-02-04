@@ -621,9 +621,9 @@
         setTimeout(() => {
             const mapContainer = document.getElementById('map');
             
-            // Menambahkan elemen div untuk peta
+            // Menambahkan elemen div untuk peta dengan outline
             mapContainer.innerHTML = `
-                <div id="google-map" style="height: 350px; width: 100%;" class="w-full rounded-2xl border dark:border-neutral-700 mx-auto max-w-screen-md"></div>
+                <div id="google-map" style="height: 350px; width: 100%; border: 3px solid #4A90E2; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);" class="w-full rounded-2xl border dark:border-neutral-700 mx-auto max-w-screen-md"></div>
                 <a class="absolute bottom-0 left-1/2 -translate-x-1/2 p-2 px-3 m-2 bg-white/50 dark:bg-black/50 backdrop-blur-sm rounded-xl font-medium text-xs border border-neutral-300 dark:border-neutral-700/50"
                     href="https://www.google.com/maps?q=Depok" target="_blank">Lihat Lebih Luas</a>
             `;
